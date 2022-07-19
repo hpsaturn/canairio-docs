@@ -24,9 +24,15 @@ For see the logs from the device, CanAirIO have logs output via USB serial conne
 
 ![Web installer logs](/docs/images/web_installer_logs.gif)
 
+## Increased verbose output
+
+For try to have more logs and more information of your CanAirIO device, please enable the **debug mode** in your CanAirIO App, in `->settings->mobile station->enable debug mode switch`.
+
 ## From any Linux shell
 
 Run `picocom -b 115200 /dev/ttyUSB0` and then press the reset button of your ESP32 board, you should have something like this:
+
+## Output sample:wq
 
 ```cpp
 19:05:08.081 > == CanAirIO Setup ==
@@ -57,14 +63,9 @@ Run `picocom -b 115200 /dev/ttyUSB0` and then press the reset button of your ESP
 
 For example in this output you don't have any sensor connected but the **PAX Counter** was enable
 
-## Increased verbose output
-
-For try to have more logs and more information of your CanAirIO device, please enable the **debug mode** in your CanAirIO App, in `->settings->mobile station->enable debug mode switch`.
-
-## Advanced debug level
+## Advanced
 
 For increase more the verbose output and have the output from the internals of the ESP32 core, you need rebuild the firmware with the `CORE_DEBUG_LEVEL` in 4 for example. You can change it in the `platformio.ini` file in the [source code](https://github.com/kike-canaries/canairio_firmware/blob/master/platformio.ini#L25).
-
 
 
 {% include links.html %}
