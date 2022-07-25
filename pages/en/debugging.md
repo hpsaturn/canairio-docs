@@ -32,7 +32,7 @@ For try to have more logs and more information of your CanAirIO device, please e
 
 Run `picocom -b 115200 /dev/ttyUSB0` and then press the reset button of your ESP32 board, you should have something like this:
 
-## Output sample:wq
+## Output sample
 
 ```cpp
 19:05:08.081 > == CanAirIO Setup ==
