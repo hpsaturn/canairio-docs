@@ -52,6 +52,10 @@ entries:
     - title: CanAirIO M5Stack
       url: /canairio_m5stack.html
       output: web, pdf 
+    
+    - title: CanAirIO IKEA Vindriktning 
+      url: /canairio_ikea.html
+      output: web, pdf 
 
     - title: Solar Station
       url: /solar_station.html
