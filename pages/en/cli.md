@@ -25,7 +25,9 @@ Using your browser please enter to our [CanAirIO Web installer](https://canair.i
 
 ![Web installer logs](/docs/images/cli_steps.jpg)
 
-[![CanAirIO CO2 easy Setup](https://github.com/kike-canaries/canairio_android/raw/master/images/anaire_youtube_preview.jpg)](https://youtu.be/29wfMPZXvps)
+### Video - OLED configuration sample
+
+[![CanAirIO CLI](https://raw.githubusercontent.com/hpsaturn/canairio-docs/main/images/cli_steps_video.jpg)](https://youtu.be/a1faUtuPIlQ)
 
 
 
