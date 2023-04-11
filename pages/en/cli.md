@@ -63,6 +63,41 @@ setup               type this to start the configuration
 
 ```
 
+### Setup mode
+
+This command show a brief of the current settings on the device like this:
+
+```bash
+Setup Mode. Main presets:
+
+CanAirIO device id	: U33TTGOT7AA17A
+Device factory id	: 5aa178
+Sensor geohash id	: u33dc6s
+WiFi current status	: connected
+Sensor sample time 	: 240
+UART sensor model 	: GENERIC
+UART sensor TX pin	: 16
+UART sensor RX pin	: 17
+Current debug mode	: disabled
+
+    KEYNAME 	DEFINED 	VALUE 
+
+    ======= 	======= 	===== 
+ wifiEnable 	custom  	true 
+  paxEnable 	default 	 
+  emoEnable 	default 	 
+    i2conly 	custom  	true 
+  altoffset 	default 	 
+    toffset 	default 	 
+
+Type "klist" for advanced settings
+Type "help" for available commands details
+Type "exit" for leave the safe mode
+```
+
+**NOTE:** Please keep in mind that you need set the WiFi and the Geohash (localization of your station) settings to have the station ready. These settings help to others to know the air quality in your zone. We have a cloud where you able to fetch all data via our API, also you able to have a widget and map visualization of your station [here](http://influxdb.canair.io:8000/d/xRQpZACWk/fixed-stations?orgId=1&refresh=5m)
+
+
 ### Safe mode
 
 When the CanAirIO firmware starts up, there is a 10-second window during which we can write the `setup` command. This allows us to configure special settings before completing the boot process. If we write `exit`, the normal boot process will continue.
@@ -74,31 +109,31 @@ This setup is important because it allows us to check for any potential incompat
 To show all variables possiblities, please run `klist`, for example:
 
 ```bash
-    KEYNAME 	DEFINED 	VALUE 
 
-    ======= 	======= 	===== 
- wifiEnable 	custom  	true   
-  paxEnable 	default 	 
-  emoEnable 	default 	 
-    i2conly 	custom  	true 
-  altoffset 	default 	 
-    toffset 	default 	 
-debugEnable 	custom  	false 
-flipVEnable 	default 	 
-homeaEnable 	default 	 
-anaireEnable 	default 	 
-  ifxEnable 	custom  	true 
-      ifxdb 	default 	 
-      ifxip 	default 	 
-      ifxpt 	default 	 
-    hassusr 	default 	 
-    hasspsw 	default 	 
-     hasspt 	default 	 
-   sealevel 	default 	 
-fsafeEnable 	default 	 
-wkrstEnable 	default 	 
-solarEnable 	default 	 
-  deepSleep 	default 	 
+    KEYNAME   DEFAULT  DEFINITION
+    =======   =======  ==============================
+ wifiEnable   true     turn on/off current WiFi network
+  paxEnable   true     turn on/off PAX counter (WiFi sniffer)
+  emoEnable   true     turn on/off Emoticons visualization (OLED)
+    i2conly   false    turn on/off forced only i2c sensors (fast boot)
+  altoffset   0        altitude offset to CO2 sensors
+    toffset   0        temp offset (positive float will be a substraction)
+debugEnable   false    turn on/off debug mode (verbose output)
+flipVEnable   false    turn on/off flip vertical on OLED and TFT screens
+homeaEnable   true     Home Assitant enable/disable	
+anaireEnable  true     Anaire cloid enable/disable	
+  ifxEnable   true     InfluxDb publication enable/disable
+      ifxdb   canairio InfluxDb database
+      ifxip   canairio IP address	(default: canairio server)
+      ifxpt   8086     port
+    hassusr   hassusr  Home Assistant username
+    hasspsw   hasspsw  Home Assistant password
+     hasspt   1883     Home Assistant port
+   sealevel   1013.25  sea level value
+fsafeEnable   true     fail safe enable/disable
+wkrstEnable   false    wake up by reset button enable/disable
+solarEnable   false    solar station mode enable/disable (experimental)
+  deepSleep   0        solar station deep sleep time (experimental)
 ```
 
 {% include links.html %}
