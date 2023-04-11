@@ -35,11 +35,11 @@ Using your browser please enter to our [CanAirIO Web installer](https://canair.i
 ESP32WifiCLI Usage:
 
 setSSID "YOUR SSID" set the SSID into quotes
-setPASW "YOUR PASW"	set the password into quotes
+setPASW "YOUR PASW" set the password into quotes
 connect             save and connect to the network
 list                list all saved networks
-select <number>   	select the default AP (default: last saved)
-mode <single/multi>	connection mode. Multi AP is a little slow
+select <number>     select the default AP (default: last saved)
+mode <single/multi> connection mode. Multi AP is a little slow
 scan                scan for available networks
 status              print the current WiFi status
 disconnect          disconnect from the network
@@ -55,7 +55,7 @@ stime <time>        set the sample time in seconds
 spins <TX> <RX>     set the UART pins
 stype <sensor_type> set the UART sensor type. Integer.
 sgeoh <GeohashId>   set geohash id. Choose it here http://bit.ly/geohashe
-kset <key> <value>	set preference key value (e.g on/off or 1/0 or text)
+kset <key> <value>  set preference key value (e.g on/off or 1/0 or text)
 klist               list valid preference keys
 info                get the device information
 exit                exit of the initial setup mode
