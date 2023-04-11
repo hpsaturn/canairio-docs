@@ -25,7 +25,7 @@ Using your browser please enter to our [CanAirIO Web installer](https://canair.i
 
 ![Web installer logs](/docs/images/cli_steps.jpg)
 
-### Video - OLED configuration sample
+**Video** (OLED configuration sample)
 
 [![CanAirIO CLI](https://raw.githubusercontent.com/hpsaturn/canairio-docs/main/images/cli_steps_video.jpg)](https://youtu.be/a1faUtuPIlQ)
 
@@ -120,11 +120,11 @@ To show all variables possiblities, please run `klist`, for example:
     toffset   0        temp offset (positive float will be a substraction)
 debugEnable   false    turn on/off debug mode (verbose output)
 flipVEnable   false    turn on/off flip vertical on OLED and TFT screens
-homeaEnable   true     Home Assitant enable/disable	
-anaireEnable  true     Anaire cloid enable/disable	
+homeaEnable   true     Home Assitant enable/disable
+anaireEnable  true     Anaire cloid enable/disable
   ifxEnable   true     InfluxDb publication enable/disable
       ifxdb   canairio InfluxDb database
-      ifxip   canairio IP address	(default: canairio server)
+      ifxip   canairio IP address (default: canairio server)
       ifxpt   8086     port
     hassusr   hassusr  Home Assistant username
     hasspsw   hasspsw  Home Assistant password
