@@ -60,6 +60,10 @@ entries:
     - title: CanAirIO IKEA Vindriktning 
       url: /canairio_ikea.html
       output: web, pdf 
+    
+    - title: CanAirIO Plantower
+      url: /canairio_plantower.html
+      output: web, pdf 
 
     - title: Solar Station
       url: /solar_station.html
