@@ -19,13 +19,15 @@ folder: en
 
 CanAirIO CLI (Command Line Interface) is an easy-to-use tool that allows you to configure your device through a console or web console. You don't need a mobile phone or any special operating system - all you need is a browser (such as Chrome or Edge) or a serial terminal interface.
 
+If you want using instead your mobile phone, please follow the next documentation [here](https://canair.io/docs/app_usage.html#overview).
+
 ## Launch the CLI
 
 Using your browser please enter to our [CanAirIO Web installer](https://canair.io/installer) and following the next steps:
 
 ![Web installer logs](/docs/images/cli_steps.jpg)
 
-**Video** (OLED configuration sample)
+**Video:** (OLED configuration sample)
 
 [![CanAirIO CLI](https://raw.githubusercontent.com/hpsaturn/canairio-docs/main/images/cli_steps_video.jpg)](https://youtu.be/a1faUtuPIlQ)
 
@@ -95,14 +97,85 @@ Type "help" for available commands details
 Type "exit" for leave the safe mode
 ```
 
-**NOTE:** Please keep in mind that you need set the WiFi and the Geohash (localization of your station) settings to have the station ready. These settings help to others to know the air quality in your zone. We have a cloud where you able to fetch all data via our API, also you able to have a widget and map visualization of your station [here](http://influxdb.canair.io:8000/d/xRQpZACWk/fixed-stations?orgId=1&refresh=5m)
-
+**NOTE:** Please keep in mind that you need set the WiFi and the Geohash (localization of your station) settings to have the station ready. These settings help to others to know the air quality in your zone. We have a cloud where you able to fetch all data via our API. Please see bellow for more details.
 
 ### Safe mode
 
 When the CanAirIO firmware starts up, there is a 10-second window during which we can write the `setup` command. This allows us to configure special settings before completing the boot process. If we write `exit`, the normal boot process will continue.
 
 This setup is important because it allows us to check for any potential incompatibilities with our `TX/RX` pins, remove any problematic network connections, or fix any other settings that may be causing issues with the firmware. By addressing these issues during the setup process, we can ensure a smoother and more reliable boot process.
+
+## Sensor config
+
+If you have a `I2C sensor` connected, CanAirIO should detect it automatically.  
+
+If you have a UART sensor connected to [pre-configured UART pins](https://github.com/kike-canaries/canairio_sensorlib#predefined-uart) for CanAirIO Sensor Library, you only should select the right model with the command `stype` like this:
+
+```python
+st> stype 0
+-->[CONF] sensor device type	: 0
+
+selected UART sensor model	: GENERIC
+Please reboot to changes apply
+```
+
+You able to list the possible sensor types using the stype without arguments:
+
+```python
+st> stype
+invalid UART sensor type! Choose one into 0-7:
+0	GENERIC
+1	GCJA5
+2	SPS30
+3	SDS011
+4	MHZ19
+5	CM1106
+6	SAIRS8
+7	IKEAVK
+```
+
+If you have your `UART` sensor connected to different pins, please use the command `spins <TX> <RX>` like this:
+
+```python
+st> spins 16 17
+-->[CONF] sensor UART TX/RX	: 16/17
+```
+
+Don't forget reboot the device with each change to take the changes.
+
+## Debug mode
+
+For try to understand more what happen with your device, you can enable the debug mode like this:
+
+```python
+debug 1
+```
+
+For disable use `debug 0` or `debug off`. You are able to write all commands over the current output at the same time. Don't panic, only type and press enter to disable again the debug mode.
+
+## Fixed station config
+
+If you want share your fixed station, you should have filled the next settings in the setup command output:
+
+```python
+CanAirIO device id : 
+Sensor geohash id  : 
+```
+
+For that please configure your localization of your air statation. For that please choose your Geohash using this [page](http://bit.ly/geohashe), and configure it using `sgeoh` command like this:
+
+```python
+sgeoh u33dcd
+```
+
+If you want less precision set at least a geohash of 6 characters. More characters is more precision.
+
+After that you should enable your WiFi, and after some minutes, your station should be in the [CanAirIO map](http://influxdb.canair.io:8000/d/nTbwM_i7k/fixed-stations-auto?orgId=1)
+
+## WiFi setup
+
+Quick guide: Use the commands: scan, setSSID, setPASW and connect for configure at least one WiFi in your device. You able to configure multiple host Ap. Please follow the next [link](https://github.com/hpsaturn/esp32-wifi-cli#readme) for details.
+
 
 ## CLI advanced commands
 
@@ -126,6 +199,7 @@ anaireEnable  true     Anaire cloid enable/disable
       ifxdb   canairio InfluxDb database
       ifxip   canairio IP address (default: canairio server)
       ifxpt   8086     port
+     hassip   hassip   Home Assistant IP address
     hassusr   hassusr  Home Assistant username
     hasspsw   hasspsw  Home Assistant password
      hasspt   1883     Home Assistant port
@@ -136,5 +210,19 @@ solarEnable   false    solar station mode enable/disable (experimental)
   deepSleep   0        solar station deep sleep time (experimental)
 ```
 
-{% include links.html %}
+For configure any variable please use the command `kset` following of value. Some examples:
 
+```python
+kset homeaEnable 1
+kset homeaEnable true
+kset hassip 192.168.0.10
+kset toffset 9.8
+```
+
+## Troubleshooting
+
+If your device enter on a panic loop, don't forget type quickly the command setup to stop the normal boot. Sometimes this kind of panic loop is because some setting is wrong, for example wrong pins choosed for your UART sensor. Set these in the first setup or safe mode and reboot again.
+
+We are able to help you in our [Telegram channel](https://t.me/canairio) too.
+
+{% include links.html %}
