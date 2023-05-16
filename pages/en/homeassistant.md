@@ -15,7 +15,6 @@ permalink: home_assistant.html
 folder: en
 ---
 
-
 ## Overview
 
 [![Home Assistant site](/docs/images/hass_media00.jpg)](https://www.home-assistant.io/)
@@ -28,7 +27,6 @@ The last version of CanAirIO firmware is integrated with the open source project
 
 You only need for that a Home Assistant instance running with built-in MQTT integration, and your CanAirIO device will be in the device list automatically.
 
-
 ## Home Assistant installation
 
 The team of Hass have many alternatives for install Hass to have a centralized controller for you home, for example a local instance running on your PC or laptop, dedicated instance for example on a RaspberryPi or similar hardware. For more details please follow the [official instructions](https://www.home-assistant.io/installation/).
@@ -37,7 +35,7 @@ The team of Hass have many alternatives for install Hass to have a centralized c
 
 ## MQTT Broker
 
-After install Home Assistant you need a MQTT broker, for that you have two alternatives: install a basic add-on or install a external MQTT broker. For simplicity here we will show the add-on alternative, for that please install it from **Add-on Store** on **Supervisor** section, and install the add-on called **Mosquitto Broker**: 
+After install Home Assistant you need a MQTT broker, for that you have two alternatives: install a basic add-on or install a external MQTT broker. For simplicity here we will show the add-on alternative, for that please install it from **Add-on Store** on **Supervisor** section, and install the add-on called **Mosquitto Broker**:
 
 ![MQTT Broker Installation](/docs/images/hass_media02.jpg)
 
@@ -53,18 +51,36 @@ Home Assistant works with many integrations. For understand the MQTT messages fr
 
 ![MQTT Broker Integration](/docs/images/hass_config_04.jpg)
 
-## CanAirIO Configuration
+## CanAirIO Config
+
+### Alternative CanAirIO App
 
 In the [CanAirIO app](https://play.google.com/store/apps/details?id=hpsaturn.pollutionreporter&hl=en), please put the **credentials** and the **IP** of the machine that has the MQTT Broker instance (in this case, the Home Assistant IP address) in **Settings->Fixed station->Advanced Settings->Home Assistant Discovery** settings, like this:
 
 ![MQTT Broker Integration](/docs/images/hass_config_07.jpg)
 
-Maybe you need wait for few seconds, and the CanAirIO will be in **device section automatically**, thanks a discovery feature of Home Assistant, reducing the complexity for add devices. You should have your CanAirIO devices like this: 
+### Alternative CanAirIO CLI
+
+Enter to the CLI like is described [here](https://canair.io/docs/cli.html) and configure the next keys like this:
+
+```bash
+klist
+kset hassip your.ip.address
+kset hassusr your_ha_username
+kset hasspsw your_ha_password
+kset hasspt your_ha_port
+
+kset homeaEnable 1
+reboot
+```
+
+## HA Config
+
+Maybe you need wait for few seconds, and the CanAirIO will be in **device section automatically**, thanks a discovery feature of Home Assistant, reducing the complexity for add devices. You should have your CanAirIO devices like this:
 
 ![MQTT Broker Integration](/docs/images/hass_config_05.jpg)  
 
 ![MQTT Broker Integration](/docs/images/hass_config_06.jpg)  
-
 
 For new devices, only do the last step, and that is it.
 
@@ -73,7 +89,6 @@ For new devices, only do the last step, and that is it.
 ![MQTT Broker Installation](/docs/images/hass_media03.jpg)
 
 Home Assistant it's very easy and flexible. In the last step for example, you only need to add it to the main **overview** section, pressing the button **ADD TO LOVELACE** and follow the alternatives for generate a new **card** in your dashboard.
-
 
 ## Troubleshooting
 
@@ -93,4 +108,3 @@ Remember also that we have a [Telegram group](https://t.me/canairio) for support
 
 ---
 {% include links.html %}
-
