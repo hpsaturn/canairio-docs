@@ -26,7 +26,7 @@ For see the logs from the device, CanAirIO have logs output via USB serial conne
 
 ## Increased verbose output
 
-For try to have more logs and more information of your CanAirIO device, please enable the **debug mode** in your CanAirIO App, in `->settings->mobile station->enable debug mode switch`.
+For try to have more logs and more information of your CanAirIO device, please enable the **debug mode** in your CanAirIO App, in `->settings->mobile station->enable debug mode switch`. Also you can enable it using [CanAirIO CLI](https://canair.io/docs/cli.html) with the command `debug 1`.
 
 ## From any Linux shell
 
