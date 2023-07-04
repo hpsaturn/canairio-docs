@@ -14,7 +14,6 @@ permalink: cli.html
 folder: en
 ---
 
-
 ## Overview
 
 CanAirIO CLI (Command Line Interface) is an easy-to-use tool that allows you to configure your device through a console or web console. You don't need a mobile phone or any special operating system - all you need is a browser (such as Chrome or Edge) or a serial terminal interface.
