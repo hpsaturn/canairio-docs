@@ -18,28 +18,37 @@ folder: en
 
 ## Overview
 
-In the looking for have a map of our fixed stations, we are working some possible solutions. Please if you know about infrastructure, web development and compatible topics, we need help with that. 
+In the looking for have a map of our fixed stations, we are working some possible solutions. **Please if you know about infrastructure, web development and compatible topics, we need help with that**.
 
 ## Grafana World Map
 
-For publish your station in this map, you need: 
+For publish your station in this map, you need:
 
-- enable the internet connection in your CanAirIO Device from the app in the `fixed station` section in settings
+Via CanAirIO app:
+
+- enable the internet connection in your CanAirIO Device from the app in the `fixed station` section in settings.
 - then tag the location, press one time the `Geohash` switch.
 - enable the `publication switch`
-- validate if your device already is sending data (in the display the arrow icons will be enable each sample time). 
-- After some seconds, you should see your station in the map.  
+- validate if your device already is sending data (in the display the arrow icons will be enable each sample time).
+- After some seconds, you should see your station in the map.
 
+Via CanAirIO CLI:
+
+Please follow the steps described [here](https://canair.io/docs/cli) for enter to the firmware CLI, and configure your [fixed station](https://canair.io/docs/cli.html#fixed-station-config).
 
 [![CanAirIO World Map](/docs/images/cloud_worldmap.jpg)](https://canair.io/stations.html)
 
-**!! Working in progress !!** 
+## AQICN
+
+When you enable your fixed station, also it will be shown in the AQICN world map, for example one of our stations:
+
+[![CanAirIO World Map](/docs/images/canairio_aqicn_preview.jpg)](https://aqicn.org/station/colombia/cali/calle-33/)
 
 ## Daquina World Map
 
-[![Daquina World Map](/docs/images/cloud_daquina_worldmap.jpg)](http://daquina.io/canairio/)
+Thanks to the Hackerspace and collective [Unlocker](https://wiki.hackerspaces.org/Unloquer) we have another alternative:
 
-**!! Working in progress !!** 
+[![Daquina World Map](/docs/images/cloud_daquina_worldmap.jpg)](http://daquina.io/canairio/)
 
 {% include links.html %}
 

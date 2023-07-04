@@ -176,7 +176,6 @@ After that you should enable your WiFi, and after some minutes, your station sho
 
 Quick guide: Use the commands: scan, setSSID, setPASW and connect for configure at least one WiFi in your device. You able to configure multiple host Ap. Please follow the next [link](https://github.com/hpsaturn/esp32-wifi-cli#readme) for details.
 
-
 ## CLI advanced commands
 
 To show all variables possiblities, please run `klist`, for example:
