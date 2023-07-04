@@ -8,7 +8,7 @@ tags:
   - map
   - data
 keywords: mobile, fixed stations, sensors, cloud, data
-last_updated: "December 17, 2021"
+last_updated: "July 4, 2023"
 summary: "CanAirIO World Map"
 series: "tools"
 sidebar: english_sidebar
@@ -18,27 +18,23 @@ folder: en
 
 ## Overview
 
-In the looking for have a map of our fixed stations, we are working some possible solutions. **Please if you know about infrastructure, web development and compatible topics, we need help with that**.
+In the looking for have a map of our public fixed stations, we are working some possible solutions. **Please if you know about infrastructure, web development and compatible topics, we need help with that**.
 
-## Grafana World Map
+## CanAirIO World Map
 
 For publish your station in this map, you need:
 
-Via CanAirIO app:
+**Via CanAirIO app**:
 
-- enable the internet connection in your CanAirIO Device from the app in the `fixed station` section in settings.
-- then tag the location, press one time the `Geohash` switch.
-- enable the `publication switch`
-- validate if your device already is sending data (in the display the arrow icons will be enable each sample time).
-- After some seconds, you should see your station in the map.
+Please follow the steps described [here](https://canair.io/docs/app_usage.html#fixed-station-mode), after some seconds, you should see your station in the map.
 
-Via CanAirIO CLI:
+**Via CanAirIO CLI**:
 
 Please follow the steps described [here](https://canair.io/docs/cli) for enter to the firmware CLI, and configure your [fixed station](https://canair.io/docs/cli.html#fixed-station-config).
 
 [![CanAirIO World Map](/docs/images/cloud_worldmap.jpg)](https://canair.io/stations.html)
 
-## AQICN
+## AQICN World Map
 
 When you enable your fixed station, also it will be shown in the AQICN world map, for example one of our stations:
 
@@ -51,4 +47,3 @@ Thanks to the Hackerspace and collective [Unlocker](https://wiki.hackerspaces.or
 [![Daquina World Map](/docs/images/cloud_daquina_worldmap.jpg)](http://daquina.io/canairio/)
 
 {% include links.html %}
-
