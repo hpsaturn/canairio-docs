@@ -5,9 +5,9 @@ tags:
   - device
   - debugging
   - config
-keywords: firmware, devel, debugging, CLI, configuration, config
+keywords: firmware, devel, debugging, CLI, configuration, config, app
 last_updated: "April 11, 2023"
-summary: "CanAirIO CLI"
+summary: "CanAirIO App and CLI alternatives"
 series: "firmware internals"
 sidebar: english_sidebar
 permalink: firmware_config.html
