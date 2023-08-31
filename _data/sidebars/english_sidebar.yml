@@ -143,12 +143,12 @@ entries:
       url: /mobile_map.html
       output: web, pdf
 
-    - title: Anaire Cloud
-      url: /cloud_anaire.html
-      output: web, pdf
-
     - title: Home Assistant
       url: /home_assistant.html
+      output: web, pdf
+
+    - title: Anaire Cloud
+      url: /cloud_anaire.html
       output: web, pdf
   
   - title: API

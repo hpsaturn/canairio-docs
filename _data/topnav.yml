@@ -4,20 +4,24 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      external_url: https://github.com/kike-canaries/docs.git
+      external_url: https://github.com/kike-canaries/
+    - title: Releases
+      external_url: https://github.com/kike-canaries/canairio_firmware/releases
     - title: News
-      url: /news
+      external_url: https://hackaday.io/project/179753/logs
+    #- title: News
+    #  url: /news
 
 #Topnav dropdowns
-topnav_dropdowns:
-- title: Topnav dropdowns
-  folders:
-    - title: Languaje
-      folderitems:
-        - title: Spanish
-          url: /index_es.html
-        - title: English
-          url: /index.html
+#topnav_dropdowns:
+#- title: Topnav dropdowns
+#  folders:
+#    - title: Languaje
+#      folderitems:
+#        - title: Spanish
+#          url: /index_es.html
+#        - title: English
+#          url: /index.html
 
 #   - title: CanAirIO
 #     folderitems:
