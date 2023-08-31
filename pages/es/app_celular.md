@@ -1,9 +1,9 @@
 ---
-title: APP CELULAR
+title: CanAirIO Manual
 tags: [device_manual]
 keywords: manual, app , canairio, user, device
 last_updated: Jun 18, 2021
-summary: "aplicacion celular manual"
+summary: "Manual de la aplicacion CanAirIO"
 sidebar: spanish_sidebar
 permalink: appmobile_es.html 
 folder: es
