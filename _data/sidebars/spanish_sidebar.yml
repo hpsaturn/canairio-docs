@@ -1,9 +1,10 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
+
 entries:
 - title: Sidebar
   product: CanAirIO
-  version: 0.5.0
+  version: 0.5.2
   folders:
 
   - title:
@@ -23,43 +24,133 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Construyendo un dispositivo
-      url: /index_es.html#building-a-device
+    - title: Building a device
+      url: /index.html#building-a-device
       output: web, pdf
 
-    - title: Cargando el Firmware
-      url: /index_es.html#firmware-upload
+    - title: Firmware upload
+      url: /firmware_upload.html#overview
       output: web
 
-    - title: App Usage
+    - title: Firmware config
+      url: /firmware_config.html#overview
+      output: web
+
+    - title: CanAirIO App
       url: /app_usage.html#overview
       output: web
 
-  - title: Guia de usuario
+    - title: CanAirIO CLI
+      url: /cli.html#overview
+      output: web
+ 
+  - title: Device
     output: web, pdf
 
     folderitems:
 
-    - title: Dispositivo CanAirIO
-      url: /user_manual_es.html
+    - title: CanAirIO Bike
+      url: /canairio_bike.html
+      output: web, pdf 
+
+    - title: CanAirIO CO2
+      url: /canairio_co2.html
+      output: web, pdf 
+
+    - title: CanAirIO M5Stack
+      url: /canairio_m5stack.html
+      output: web, pdf 
+    
+    - title: CanAirIO IKEA Vindriktning 
+      url: /canairio_ikea.html
+      output: web, pdf 
+    
+    - title: CanAirIO Plantower
+      url: /canairio_plantower.html
+      output: web, pdf 
+
+    - title: Solar Station
+      url: /solar_station.html
+      output: web, pdf 
+
+  - title: Sensors
+    output: web, pdf
+
+    folderitems:
+
+    # - title: CanAirIO CO2
+    #   url: /canairio_bike.html
+    #   output: web, pdf
+
+    - title: CanAirIO Sensorslib
+      url: sensorlib.html
       output: web, pdf
 
-    - title: Modo estación móvil 
-      url: /user_manual_es.html
+    # - title: Sensors supported
+    #   url: /sensors.html
+    #   output: web, pdf
+
+    - title: CO2 sensors comparative
+      url: /co2_comparative.html
       output: web, pdf
 
-    - title: Modo estación fija
-      url: /user_manual_es.html
+  - title: Firmware
+    output: web, pdf
+
+    folderitems:
+    - title: Overview
+      url: /firmware_upload.html#overview
       output: web, pdf
 
-    - title: Android app
-      url: /user_manual_es.html
+    - title: Upload via CanAirIO Web Installer
+      url: /firmware_upload.html#canairio-web-installer
       output: web, pdf
 
-    - title: Compartiendo datos
-      url: /user_manual_es.html
+    - title: Upload via CanAirIO Loader
+      url: /firmware_upload.html#canairio-loader
       output: web, pdf
 
+    - title: Upload via Espressif Uploader
+      url: /firmware_upload.html#espressif-uploader
+      output: web, pdf
+
+    - title: Upload via CanAirIO Installer
+      url: /firmware_upload.html#canairio-installer
+      output: web, pdf
+
+    - title: Upload from Source Code
+      url: /firmware_upload.html#via-source-code
+      output: web, pdf
+    
+    - title: Firmware configuration
+      url: /firmware_config.html
+      output: web
+
+    - title: Firmware debugging
+      url: /firmware_debugging.html
+      output: web, pdf
+
+  - title: Integrations
+    output: web, pdf
+
+    folderitems:
+
+    - title: CanAirIO World map
+      url: /cloud_worldmap.html
+      output: web, pdf
+
+    - title: CanAirIO Mobile Map
+      url: /mobile_map.html
+      output: web, pdf
+
+    - title: Anaire Cloud
+      url: /cloud_anaire.html
+      output: web, pdf
+
+    - title: Home Assistant
+      url: /home_assistant.html
+      output: web, pdf
+  
   - title: API
     output: web, pdf
 
@@ -73,38 +164,21 @@ entries:
       url: /fixed_stations_api_en.html
       output: web, pdf
 
-  - title: Hardware
-    output: web, pdf
-
-    folderitems:
-
-    - title: Sensors wiring
-      url: /sensors_es.html
-      output: web, pdf
-
-    - title: CO2 sensors
-      url: /co2_comparative.html
-      output: web, pdf 
-
-  - title: Firmware
-    output: web, pdf
-
-    folderitems:
     - title: Bluetooth GATT protocol
       url: /firmware_protocol.html
       output: web, pdf
 
-    - title: Firmware debugging
-      url: /firmware_debugging.html
-      output: web, pdf
 
   - title: Community
     output: web, pdf
 
     folderitems:
 
+    - title: Collectives and Partners
+      url: /partners.html
+      output: web, pdf
+
     - title: Respiraton 2021
       url: /Respiraton2021.html
       output: web, pdf
-
 

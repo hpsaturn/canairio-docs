@@ -1,15 +1,26 @@
 ---
-title: "CanAirIO guia rapida"
-keywords: quickstart
+title: "Getting started with CanAirIO"
+keywords: homepage
 tags: [getting_started]
 sidebar: spanish_sidebar
 permalink: index_es.html
-summary: These brief instructions will help you get started quickly with CanAirIO. 
+summary: These brief instructions will help you get started quickly with CanAirIO.
+
 ---
 
-## Objetivo
+![CanAirIO Community](images/canairio_collage_community.jpg)
+## Overview
 
-CanAirIO es un proyecto de ciencia ciudadana con sensores móviles y fijos para medir la calidad del aire usando sensores de bajo costo y celulares.
+CanAirIO is a citizen science project using mobile and fixed air quality stations to measure some variables like PM2.5, CO2, AQI and others air indicators with cell phones and low-cost technology. 
+
+## CanAirIO Web Installer
+
+Good news! we already have a super easy way for **install CanAirIO** on any compatible **Arduino ESP32 board**, with a few clicks in seconds without any sensor, for example you able to have our **CanAirIO PAX Counter** device:
+
+![video_2021-11-13_23-36-10](https://user-images.githubusercontent.com/423856/141661066-0fafcaa9-98b4-419b-b1e7-4371f3cb99b8.gif)  
+
+More info in [canair.io/installer](https://canair.io/installer.html)
+
 
 ## Building a device
 
@@ -17,12 +28,16 @@ We have some device version alternatives with some guides:
 
 | Device version    | Difficulty |  Status | Links  |
 | :------------- |:--------:| :-----------: | :-----------: |
-|  CanAirIO without soldering (EN)  | Easy | Updated |  [Complete guide and video][10] |
-|  CanAirIO without soldering (ES)  | Easy | Updated | [Complete guide and video][11] |
+|  CanAirIO Bike   | Medium | New | [Complete guide and video][15] |
+|  CanAirIO CO2   | Medium | New | [Complete guide and video][16] |
+|  CanAirIO M5Stack   | Easy | New | [Basic guide][17] |
+|  CanAirIO IKEA Vindriktning | Easy | New | [Basic guide][19] |
+|  CanAirIO Plantower | Easy | New | [Basic guide][20] |
+|  CanAirIO Solar Station | Medium | New | [Basic guide][18] |
+|  CanAirIO without soldering (EN)  | Easy | Outdated |  [Complete guide and video][10] |
+|  CanAirIO without soldering (ES)  | Easy | Outdated | [Complete guide and video][11] |
 |  CanAirIO device v2.1 (EN)  | Medium | Outdated | [Complete guide and video][12] |
 |  CanAirIO device v2.1 (ES)  | Medium | Outdated | [Complete guide and video][13] |
-|  CanAirIO TTGO-TDisplay   | Advanced | Deprecated | [Complete guide][14] |
-|  CanAirIO Bike   | Advanced | New | [Complete guide][15] |
 
 
 [10]: https://www.hackster.io/canairio/build-low-cost-air-quality-sensor-canairio-without-soldering-d87494
@@ -31,26 +46,11 @@ We have some device version alternatives with some guides:
 [13]: https://www.hackster.io/114723/canairio-red-ciudadana-para-monitoreo-de-calidad-del-aire-96f79a
 [14]: https://github.com/hpsaturn/CanAirIO#readme
 [15]: https://canair.io/docs/canairio_bike.html
-
-
-## Firmware upload
-
-CanAirIO device supports ESP32 boards with Bluetooth and Wifi features, all boards with it should be able to receive the current firmware. We have three alternatives for uploading it:
-
-| Alternative    | Software | Requeriments  | Links   |
-| :------------- |:--------:| :-----------: | :-----: |
-| Uploader sketch (easy)    | Arduino Droid App | NO drivers only a OTG cable | [Complete guide and video][20] |
-| Uploader sketch (basic)    | Arduino IDE | USB drivers | [Complete Guide][20] |
-| Installer (basic)       | Python | NO drivers on Linux and Mac | [CanAirIO release][21] |
-| Binaries (basic)      | Espressif software | USB drivers - Windows only | [Complete guide][22] |
-| Build and install (advanced) | PlatformIO | No drivers on Linux | [Complete guide][23] |
-
-[20]: https://github.com/hpsaturn/esp32-canairio-loader#readme
-[21]: https://github.com/kike-canaries/canairio_firmware/releases
-[22]: /firmware_upload_binaries_alternative.html
-[23]: https://github.com/kike-canaries/canairio_firmware#compiling
-
+[16]: https://canair.io/docs/canairio_co2.html
+[17]: https://canair.io/docs/canairio_m5stack.html
+[18]: https://canair.io/docs/solar_station.html
+[19]: https://canair.io/docs/canairio_ikea.html
+[20]: https://canair.io/docs/canairio_plantower.html 
 
 {% include links.html %}
-
 
