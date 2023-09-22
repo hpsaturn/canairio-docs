@@ -188,7 +188,8 @@ To show all variables possiblities, please run `klist`, for example:
   emoEnable   true     turn on/off Emoticons visualization (OLED)
     i2conly   false    turn on/off forced only i2c sensors (fast boot)
   altoffset   0        altitude offset to CO2 sensors
-    toffset   0        temp offset (positive float will be a substraction)
+    toffset   0        temperature offset (positive float => substraction)
+    tunit     0        temperature unit (Celsius, Fahrenheit, Kelvin)
 debugEnable   false    turn on/off debug mode (verbose output)
 flipVEnable   false    turn on/off flip vertical on OLED and TFT screens
 homeaEnable   true     Home Assitant enable/disable
@@ -206,6 +207,7 @@ fsafeEnable   true     fail safe enable/disable
 wkrstEnable   false    wake up by reset button enable/disable
 solarEnable   false    solar station mode enable/disable (experimental)
   deepSleep   0        solar station deep sleep time (experimental)
+  geigerPin   -1       Geiger GPIO pin
 ```
 
 For configure any variable please use the command `kset` following of value. Some examples:
@@ -216,6 +218,8 @@ kset homeaEnable true
 kset hassip 192.168.0.10
 kset toffset 9.8
 ```
+
+Some variables needs a reboot to perform the changes.
 
 ## Troubleshooting
 

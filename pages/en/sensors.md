@@ -9,6 +9,8 @@ permalink: sensors.html
 folder: en
 ---
 
+**== D E P R E C A T E D==**
+
 | IMAGEN           | MARCA SENSOR     | DESCRIPCION     |
 | ---------------- |:----------------:| -----------|
 |**Material Particulado PM2.5:**|

@@ -9,6 +9,8 @@ permalink: boards.html
 folder: en
 ---
 
+**== D E P R E C A T E D==**
+
 ## TTGO T7
 
 ![TTGO T7 board](/docs/images/boards_ttgo_t7.jpg)  

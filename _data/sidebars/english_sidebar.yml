@@ -174,11 +174,17 @@ entries:
 
     folderitems:
 
+    - title: Respiraton 2021
+      url: /Respiraton2021.html
+      output: web, pdf
+
     - title: Collectives and Partners
       url: /partners.html
       output: web, pdf
 
-    - title: Respiraton 2021
-      url: /Respiraton2021.html
-      output: web, pdf
+
+
+    # - title: Social Media
+    #   url: /social.html
+    #   output: web, pdf
 

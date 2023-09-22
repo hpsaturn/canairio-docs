@@ -9,6 +9,8 @@ topnav:
       external_url: https://github.com/kike-canaries/canairio_firmware/releases
     - title: News
       external_url: https://hackaday.io/project/179753/logs
+    - title: Support
+      external_url: https://t.me/canairio
     #- title: News
     #  url: /news
 
