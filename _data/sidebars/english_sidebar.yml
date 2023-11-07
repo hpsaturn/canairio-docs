@@ -94,6 +94,10 @@ entries:
       url: /co2_comparative.html
       output: web, pdf
 
+    - title: DF Robot Gravity Sensors
+      url: /dfrobot_sensors.html
+      output: web, pdf
+
   - title: Firmware
     output: web, pdf
 
