@@ -120,6 +120,8 @@ Using our [canair.io/installer](https://canair.io/installer) you can use it to h
 - choose the option **logs**
 - restart your device to see the complete output
 
+More info about Firmware debugging [here](https://canair.io/docs/firmware_debugging.html)
+
 ---
 
 Remember also that we have a [Telegram group](https://t.me/canairio) for support.
