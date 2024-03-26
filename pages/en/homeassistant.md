@@ -74,6 +74,24 @@ kset homeaEnable 1
 reboot
 ```
 
+For instance, maybe do you have something like this:
+
+```bash
+    ...
+homeaEnable 	custom  	true 
+anaireEnable 	default 	 
+  ifxEnable 	default 	 
+      ifxdb 	default 	 
+      ifxip 	default 	 
+      ifxpt 	default 	 
+     hassip 	custom  	10.0.0.18 
+    hassusr 	custom  	homeassistant 
+    hasspsw 	custom  	AeNgukeib5iem2ai
+     hasspt 	custom  	1883 
+   sealevel 	default 	 
+   ...
+```
+
 ## HA Config
 
 Maybe you need wait for few seconds, and the CanAirIO will be in **device section automatically**, thanks a discovery feature of Home Assistant, reducing the complexity for add devices. You should have your CanAirIO devices like this:
