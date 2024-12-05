@@ -64,7 +64,11 @@ entries:
     - title: CanAirIO IKEA Vindriktning 
       url: /canairio_ikea.html
       output: web, pdf 
-    
+
+    - title: CanAirIO IKEA Vindstyrka
+      url: /canairio_ikea_vindstyrka.html
+      output: web, pdf 
+   
     - title: CanAirIO Plantower
       url: /canairio_plantower.html
       output: web, pdf 
