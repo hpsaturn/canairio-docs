@@ -16,7 +16,7 @@ folder: en
 
 ## Overview
 
-The next are the notes extracted from [CanAirIO channel](https://t.me/canairio/32787) in Telegram wrote by @Marvin-YYC user.
+The next are the notes extracted from [CanAirIO channel](https://t.me/canairio/32787) in Telegram wrote by [@Marvin-YYC](https://github.com/Marvin-YYC) user.
 
 ## Components
 
@@ -33,7 +33,7 @@ The next are the notes extracted from [CanAirIO channel](https://t.me/canairio/3
 
 Install CanAirIO firmware on the ESP32. For that:
 
-- Go to https://canair.io/installer.html and use the web installer to flash the firmware to your the ESP32. Select flavor ESP32C3 SEEDX listed under 'Special Versions'. Be sure to use a desktop version of Google Chrome or Edge.
+- Go to [CanAirIO installer](https://canair.io/installer.html) and use the web installer to flash the firmware to your the ESP32. Select flavor ESP32C3 SEEDX listed under 'Special Versions'. Be sure to use a desktop version of Google Chrome or Edge.
 
 - Once the install has finished select on the 'Device Dashboard' select Logs & Console. Hit enter twice and your should see CanAirIO: $  this is the CLI interface.
 
@@ -46,7 +46,7 @@ nmcli connect YourSSID password "your_password"
 > Syntax: YourSSID not in quotes your password in quotes.
 > The CLI should indicate that you have connected to WiFi if your credentials were entered correctly.
 
-- Next you need to set your geohash location.  Go to this website http://bit.ly/geohashe and select and copy the geohash code for your location.  Once you have this code, type:
+- Next you need to set your geohash location. Go to this [website](http://bit.ly/geohashe) and select and copy the geohash code for your location.  Once you have this code, type:
 
 ```bash
 sgeoh xxxxxx
@@ -81,7 +81,7 @@ Once the ESP32 boots up you should be able to see information from the IKEA sens
 
 If everything is in order, you can now secure the ESP32 inside the IKEA case. Use a small piece of double sided tape or some other tape to secure the ESP32 to the side of the case out of the way of the other components. Making sure no wires or components will touch/short on the IKEA board.  Ensure that the WiFi antenna does not interfere with the reassembly or obstruck the screws.
 
-After about 30 minutes your should be able to see your CanAirIO device here and create your own dashboard.> http://influxdb.canair.io:8000/
+After about 30 minutes your should be able to see your CanAirIO device here and create your own dashboard.> [here](http://influxdb.canair.io:8000/)
 
 All done, good job :)
 
