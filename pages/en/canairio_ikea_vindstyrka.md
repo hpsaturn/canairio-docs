@@ -7,7 +7,7 @@ tags:
   - hacks
 keywords: firmware, hardware, IKEA, Vindstyrka, device, hacks
 last_updated: "December 5, 2024"
-summary: "CanAirIO interface for IKEA Vindstyrka and SeeedStudio XIAO S3"
+summary: "CanAirIO interface for IKEA Vindstyrka and SeeedStudio XIAO C3"
 series: "hardware"
 sidebar: english_sidebar
 permalink: canairio_ikea_vindstyrka.html
@@ -23,7 +23,7 @@ The next are the notes extracted from [CanAirIO channel](https://t.me/canairio/3
 ![CanAirIO IKEA](images/ikea_vindstyrka_parts.jpg)
 
 - IKEA Air Quality Sensor type: E2112 VINDSTYRKA
-- Seeed Studio ESP32c3 XIAO microcontroller.
+- Seeed Studio ESP32C3 XIAO microcontroller.
 
 (It is a good practice to connect the radio antenna to the ESP32 before you connect to USB power. Some radio chips can be damaged if you neglect to connect an antenna.)
 
