@@ -81,7 +81,7 @@ Once the ESP32 boots up you should be able to see information from the IKEA sens
 
 If everything is in order, you can now secure the ESP32 inside the IKEA case. Use a small piece of double sided tape or some other tape to secure the ESP32 to the side of the case out of the way of the other components. Making sure no wires or components will touch/short on the IKEA board.  Ensure that the WiFi antenna does not interfere with the reassembly or obstruck the screws.
 
-After about 30 minutes your should be able to see your CanAirIO device here and create your own dashboard.> [here](http://influxdb.canair.io:8000/)
+After about 30 minutes your should be able to see your CanAirIO device here and create your own dashboard.> [here](http://grafana.canair.io/)
 
 All done, good job :)
 

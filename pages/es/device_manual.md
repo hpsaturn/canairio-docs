@@ -20,7 +20,7 @@ La guia completa para el armado del monitor y donde adquirir las partes y la sec
 Tanto el desarrollo del Software de la aplicación movil y el firmware de control del monitor están licenciados como Software Libre y puede ser auditado y reusado en [CanAirIO GitHub](https://github.com/kike-canaries)
 
 Los datos generados por los Monitores CanAirIO se pueden consultar en el mapa
- : [http//daquina/canairio](http://daquina.io/canairio/) aporte de la comunidad  [Un/loquer](https://unloquer.org/) y las lineas de tiempo de los datos se visualizan en  http://influxdb.canair.io:8000/
+ : [http//daquina/canairio](http://daquina.io/canairio/) aporte de la comunidad  [Un/loquer](https://unloquer.org/) y las lineas de tiempo de los datos se visualizan en  http://grafana.canair.io/
 <br>
 <br>
 
@@ -198,7 +198,7 @@ Si en nuestro CanAir.IO tenemos un sensor Sensirion (SP30) las posiciones correc
 5. CanAirIO Facebook https://www.facebook.com/canairq/  
 6. Repositorio en GitHub https://github.com/kike-canaries  
 7. CanAirIO YouTube https://www.youtube.com/channel/  UCwxcQKEEe4Iv35zXE0H6jtQ
-8. Grafana Estaciones Fijas http://influxdb.canair.io:8000/d/xRQpZACWk/fixed-stations?orgId=1&refresh=5s  
+8. Grafana Estaciones Fijas http://grafana.canair.io/d/xRQpZACWk/fixed-stations?orgId=1&refresh=5s  
 9. Cos4Cloud CanAirIO site https://cos4cloud-eosc.eu/citizen-science-innovation/cos4cloud-citizen-observatories/canairio/  
 10. Album de Fotos https://photos.google.com/u/1/share/AF1QipOwv1e3dW9-I4cOYjKqUle2D4L3Spj6AkoJBYwWzwVUlleWiqyte8p6UAyiQG8e1A?key=Q24zSVdCMzlmYXFkVGNhQ29nWmZGcTJpMlRDbmp311.     
 11.CanAirIO Foro https://foro.canair.io/  

@@ -373,9 +373,9 @@ The current fixed stations are stored in an InfluxDB database service, each stat
 
 For now, the shared series time of each stations could be listed in our Grafana dashboard here:
 
-[CanAirIO grafana](http://influxdb.canair.io:8000)
+[CanAirIO grafana](http://grafana.canair.io)
 
-[![Mobile track visualization](/docs/images/grafana_sample.jpg)](http://influxdb.canair.io:8000)
+[![Mobile track visualization](/docs/images/grafana_sample.jpg)](http://grafana.canair.io)
 
 ### Data endpoint
 
