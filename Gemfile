@@ -1,7 +1,11 @@
 source "https://rubygems.org"
 
-# to publish on github page
-gem 'github-pages', group: :jekyll_plugins
-
-# to publich without github page
-#gem "jekyll"
+gem "jekyll", "~> 3.9.5"
+gem "jekyll-sitemap"
+gem "jekyll-gist"
+gem 'jekyll-mentions'
+gem 'jekyll-feed'
+group :jekyll_plugins do
+  gem 'jekyll-commonmark-ghpages'
+end
+gem "kramdown-parser-gfm"
