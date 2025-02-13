@@ -169,7 +169,7 @@ sgeoh u33dcd
 
 If you want less precision set at least a geohash of 6 characters. More characters is more precision.
 
-After that you should enable your WiFi, and after some minutes, your station should be in the [CanAirIO map](http://grafana.canair.io/d/nTbwM_i7k/fixed-stations-auto?orgId=1)
+After that you should enable your WiFi, and after some minutes, your station should be in the [CanAirIO map](https://grafana.canair.io/d/nTbwM_i7k/fixed-stations-auto?orgId=1)
 
 ## WiFi setup
 
