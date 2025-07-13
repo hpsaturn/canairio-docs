@@ -179,6 +179,20 @@ Sample output for this station:
 }
 ```
 
+## Complete Data
+
+You can download the complete database for academic purposes only. Please consider making a [donation](https://github.com/kike-canaries/canairio_firmware?tab=readme-ov-file#donations) to help support the maintenance of our infrastructure.
+
+[download influxdb backup](http://influxdb.canair.io:8080/data/)
+
+To restore the database, please untar the file and execute:
+
+```bash
+influxd restore -portable -db canairio <path-to-backup>
+```
+
+(canairio database must not exist)
+
 ## Data visualization
 
 The shared time series of each stations could be listed in our Grafana dashboard:
