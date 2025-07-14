@@ -185,13 +185,13 @@ You can download the complete database for academic purposes only. Please consid
 
 [download influxdb backup](http://influxdb.canair.io:8080/data/)
 
-To restore the database, please untar the file and execute:
+To restore the database, please extract the file and execute:
 
 ```bash
 influxd restore -portable -db canairio <path-to-backup>
 ```
 
-(canairio database must not exist)
+(**Notes**: canairio database must not exist. The influxdb version that was use was: 1.11.8-2)
 
 ## Data visualization
 
